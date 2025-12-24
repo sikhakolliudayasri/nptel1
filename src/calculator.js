@@ -5,7 +5,9 @@ function calculateResult(marks) {
         total += marks[i];
     }
 
-    let percentage = Math.round((total / (marks.length * 100)) * 100);
+    let percentage = Math.round(
+        (total / (marks.length * 100)) * 100
+    );
 
     let result = percentage >= 40 ? "Pass" : "Fail";
 
